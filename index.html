@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guideregion - Sights of Your Region</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">Guideregion</div>
+        <div class="search-box">
+            <input type="text" placeholder="Search location...">
+        </div>
+        <nav class="nav">
+            <a href="#top-places">Top Places</a>
+            <a href="#routes">Routes</a>
+            <a href="#tips">Tips for Tourists</a>
+        </nav>
+        <button class="burger-menu" aria-label="Toggle menu">&#9776;</button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Discover the Amazing Places of Your Region</h1>
+            <button class="cta-button">Select Tour</button>
+        </section>
+
+        <section id="top-places" class="grid-section">
+            <h2>Natural & Historical Objects</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <img src="images/place1.webp" alt="Canyon Viewpoint">
+                    <h3>Canyon Viewpoint</h3>
+                    <p>Category: 4x4 | Rating: 4.9 ★</p>
+                </article>
+                <article class="card">
+                    <img src="images/place2.webp" alt="Mountain Lake">
+                    <h3>Mountain Lake</h3>
+                    <p>Category: Hiking | Rating: 4.8 ★</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="feedback-section">
+            <h2>Route Configurator</h2>
+            <form class="route-form">
+                <label for="days">Duration (in days):</label>
+                <input type="number" id="days" name="days" required min="1">
+
+                <label for="group">Group Size:</label>
+                <input type="number" id="group" name="group" required min="1">
+
+                <label for="email">Email for Sending the Map in PDF Format:</label>
+                <input type="email" id="email" name="email" required placeholder="example@mail.com">
+
+                <button type="submit" class="cta-button">Generate Map</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="rescue-contacts">
+            <p>Emergency / Rescue Services: 112</p>
+        </div>
+        <div class="guide-links">
+            <a href="#">Certified Guides Directory</a>
+        </div>
+        <div class="theme-selector">
+            <button id="theme-toggle" class="theme-btn">Invert Theme</button>
+        </div>
+    </footer>
+
+</body>
+</html>
